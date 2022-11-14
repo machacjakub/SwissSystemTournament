@@ -1,0 +1,17 @@
+3 hlavní komponenty
+  - formulář na vyplnění hráčů
+  - formulář na vyplnění obecných údajů - počet kol, elo/pořadí/náhodně
+  - rankings
+  - rounds
+
+
+
+
+
+ToDo:
+ - vytvořit funkci pro generování nového kola
+
+
+
+
+Done:
