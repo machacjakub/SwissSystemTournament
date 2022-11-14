@@ -14,7 +14,7 @@ function Rankings() {
         display: 'inline-block',
       }}
     >
-      Rankingssss
+      Rankings
       {appData.players.map((player) => {
         return (
           <li key={player.id}>
