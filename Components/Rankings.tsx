@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { useContext } from 'react';
 import ContextData from '../Context/Context';
+import { rankingSort } from '../Functions/RankingCalculation';
 
 function Rankings() {
   const { appData }: any = useContext(ContextData);
+  const players = rankingSort(appData.players);
   return (
     <div
       style={{
@@ -15,7 +17,7 @@ function Rankings() {
       }}
     >
       Rankings
-      {appData.players.map((player) => {
+      {players.map((player) => {
         return (
           <li key={player.id}>
             {player.name}{' '}
