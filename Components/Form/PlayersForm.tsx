@@ -34,12 +34,12 @@ function PlayersForm() {
   function handleAdd() {
     setPlayers([...players, dummyPlayer]);
   }
-  function updatePlayers(id, name, rank) {
+  function updatePlayers(id, name, initRank) {
     const dummy = JSON.parse(JSON.stringify(players));
     dummy[id].name = name;
-    dummy[id].rank = rank;
+    dummy[id].initRank = initRank;
     setPlayers(dummy);
-    console.log('PlayersForm - updatePlayers: ' + name + ' ' + rank);
+    console.log('PlayersForm - updatePlayers: ' + name + ' ' + initRank);
   }
   function handleSubmit(event) {
     handlePlayersSubmit(players, event);

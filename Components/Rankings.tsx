@@ -6,6 +6,7 @@ import { rankingSort } from '../Functions/RankingCalculation';
 function Rankings() {
   const { appData }: any = useContext(ContextData);
   const players = rankingSort(appData.players);
+  console.log(JSON.stringify(players));
   return (
     <div
       style={{
@@ -26,7 +27,7 @@ function Rankings() {
               : appData.initRanking == 'rank'
               ? 'Rank'
               : ''}
-            : {player.rank}
+            : {player.initRank}
           </li>
         );
       })}

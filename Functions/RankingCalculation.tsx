@@ -7,6 +7,7 @@ function rankingSort(players) {
     if (p1.initRank > p2.initRank) return -1;
     if (p1.initRank < p2.initRank) return 1;
   });
+  console.log('rankingFun: ' + JSON.stringify(newArr));
   return newArr;
 }
 
