@@ -1,20 +1,22 @@
 import * as React from 'react';
+import OneMatch from './OneMatch';
 
-function RoundsContainer() {
+function OneRound() {
   return (
     <div
       style={{
-        width: '90%',
+        width: '500px',
         border: '3px solid black',
-        backgroundColor: 'lightblue',
+        backgroundColor: 'orange',
         margin: '5px',
         padding: '5px',
         display: 'inline-block',
       }}
     >
-      ROUNDS
+      Round1
+      <OneMatch />
     </div>
   );
 }
 
-export default RoundsContainer;
+export default OneRound;

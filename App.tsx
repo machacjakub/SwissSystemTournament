@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useContext } from 'react';
 import ContextData from './Context/Context';
 import Rankings from './Components/Rankings';
-import RoundsContainer from './Components/RoundsContainer';
+import RoundsContainer from './Components/Rounds/RoundsContainer';
 import StartingForm from './Components/Form/StartingForm';
 import { ContextProvider } from './Context/Context';
 import './style.css';
@@ -25,17 +25,17 @@ export default function App() {
   return (
     <ContextProvider>
       <StartingForm />
-      <PlayersForm/>
+      <PlayersForm />
       <table style={{ width: '100%' }}>
         <tbody>
-        <tr style={{ width: '100%' }}>
-          <td style={{ width: '45%' }}>
-            <Rankings />
-          </td>
-          <td style={{ width: '45%' }}>
-            <RoundsContainer />
-          </td>
-        </tr>
+          <tr style={{ width: '100%' }}>
+            <td style={{ width: '45%' }}>
+              <Rankings />
+            </td>
+            <td style={{ width: '45%' }}>
+              <RoundsContainer />
+            </td>
+          </tr>
         </tbody>
       </table>
       <GameState />
