@@ -16,7 +16,7 @@ export const ContextProvider = ({ children }) => {
         name: '',
         initRank: 0,
         points: 0,
-        bucholz: 0,
+        buchholz: 0,
         playersPlayed: {},
       },
       {
@@ -24,7 +24,7 @@ export const ContextProvider = ({ children }) => {
         name: '',
         initRank: 0,
         points: 0,
-        bucholz: 0,
+        buchholz: 0,
         playersPlayed: {},
       },
     ],

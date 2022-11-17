@@ -12,7 +12,7 @@ interface PlayerType {
   name: string;
   initRank: number;
   points: number;
-  bucholz: number;
+  buchholz: number;
   playersPlayed: {};
 }
 

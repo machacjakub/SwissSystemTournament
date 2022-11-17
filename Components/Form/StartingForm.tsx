@@ -6,7 +6,7 @@ import PlayersForm from './PlayersForm';
 function StartingForm() {
   const { appData, handleFormSubmit }: any = useContext(ContextData);
   const [rounds, setRounds] = useState('');
-  const [initRank, setInitRank] = useState('');
+  const [initRank, setInitRank] = useState('random');
   const [players, setPlayers] = useState([]);
   function handleSubmit(event) {
     handleFormSubmit(rounds, initRank, event);
@@ -28,7 +28,7 @@ function StartingForm() {
         padding: '20px',
         margin: '15px',
         borderRadius: '20px',
-        display: appData.filledForm==0 ? 'inline-block':'none',
+        display: appData.filledForm == 0 ? 'inline-block' : 'none',
       }}
     >
       <form onSubmit={handleSubmit}>

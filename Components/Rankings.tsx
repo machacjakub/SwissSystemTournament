@@ -18,17 +18,28 @@ function Rankings() {
       }}
     >
       Rankings
+      <tr>
+        <th>Name</th>
+        <th>
+          {appData.initRanking == 'elo'
+            ? 'ELO'
+            : appData.initRanking == 'rank'
+            ? 'Rank'
+            : ''}
+        </th>
+        <th>Points</th>
+        <th>Buchholz</th>
+      </tr>
       {players.map((player) => {
         return (
-          <li key={player.id}>
-            {player.name}{' '}
-            {appData.initRanking == 'elo'
-              ? 'ELO'
-              : appData.initRanking == 'rank'
-              ? 'Rank'
-              : ''}
-            : {player.initRank}
-          </li>
+          <tr key={player.id}>
+            <td>{player.name} - </td>
+            <td>{appData.initRanking == 'random' ? '' : player.initRank}</td>
+            <td>
+              <b>{player.points}</b>
+            </td>
+            <td>({player.buchholz})</td>
+          </tr>
         );
       })}
     </div>
