@@ -16,4 +16,9 @@ interface PlayerType {
   playersPlayed: {};
 }
 
-export type { AppDataT, PlayerType };
+type Rounds = Round[];
+type Round = Match[];
+type Match = [number, number, MatchResult];
+type MatchResult = 1 | 0.5 | 0 | 9;
+
+export type { AppDataT, PlayerType, Rounds, Round };
